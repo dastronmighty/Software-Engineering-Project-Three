@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "disksAndPlayers.h"
-#include "movelib.h"
-#include "playerio.h"
+#include "lib/disksAndPlayers.h"
+#include "lib/movelib.h"
+#include "lib/playerio.h"
 
 int main()
 {
