@@ -318,7 +318,12 @@ int searchLeft(disk arr[], int cur, player check, position *pos_arr, int pos_arr
         {
           moves_found++;
           cur_amt_mvs++;
+          break;
         }
+      }
+      else
+      {
+        break;
       }
     }
  
@@ -349,9 +354,13 @@ int searchRight(disk arr[], int disk_arr_len, int cur, player check, position *p
         {
           moves_found++;
           cur_amt_mvs++;
+          break;
         }
       }
- 
+      else
+      {
+        break;
+      }
     }
  
   }
