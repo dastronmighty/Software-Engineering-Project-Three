@@ -7,13 +7,11 @@
 
 int main()
 {
-    // Variables declaration
-    // player player1, player2;
+    //Variables declaration
+    player player1, player2;
     disk board[SIZE][SIZE];
 
-    // initializePlayers(&player1, &player2);
-    player player1 = {"eoghan", WHITE, 2};
-    player player2 = {"sam", BLACK, 2};
+    initializePlayers(&player1, &player2);
     printf("\n");
 
     initializeBoard(board);
@@ -33,7 +31,7 @@ int main()
         printGameState(board, player1, player2);
         move = readMoves(valid_moves, amt_vald_mvs);
         board[valid_moves[move-1].row][valid_moves[move-1].col].type = player1.type;
-        flipDisks(1,board[valid_moves[move-1].row][valid_moves[move-1].col], board, &player1.points, &player2.points);
+        flipDisks(0,board[valid_moves[move-1].row][valid_moves[move-1].col], board, &player1.points, &player2.points);
         player1.points++;
         play_able++;
       }
@@ -43,7 +41,7 @@ int main()
         printGameState(board, player2, player1);
         move = readMoves(valid_moves, amt_vald_mvs);
         board[valid_moves[move-1].row][valid_moves[move-1].col].type = player2.type;
-        flipDisks(0,board[valid_moves[move-1].row][valid_moves[move-1].col], board, &player2.points, &player1.points);
+        flipDisks(1x,board[valid_moves[move-1].row][valid_moves[move-1].col], board, &player2.points, &player1.points);
         player2.points++;
         play_able++;
       }
