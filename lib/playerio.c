@@ -31,8 +31,8 @@ void printGameState(disk board[SIZE][SIZE], player cur, player opp){
   printf("%s: %d | %s: %d\n", cur.name, cur.points, opp.name, opp.points);
   printBoard(board);
   if (cur.type == WHITE) {
-    printf("It is %s's (0) Turn\n", cur.name);
+    printf("It is %s's (O) Turn\n", cur.name);
   }else{
-    printf("It is %s's (1) Turn\n", cur.name);
+    printf("It is %s's (@) Turn\n", cur.name);
   }
 }
