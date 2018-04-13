@@ -31,8 +31,10 @@ void initializeBoard(disk board[SIZE][SIZE]);
 
 void printBoard(disk board [SIZE][SIZE]);
 
+//flip white disks inbetween two black disks in the passed in arr
 void flipWhiteDisks(disk cur_disk, disk board[SIZE][SIZE], disk arr[], int disk_arr_len, int *cur_score, int *opp_score);
 
+//flip black disks inbetween two white disks in the passed in arr
 void flipBlackDisks(disk cur_disk, disk board[SIZE][SIZE], disk arr[], int disk_arr_len, int *cur_score, int *opp_score);
 
 #endif

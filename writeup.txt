@@ -1,0 +1,41 @@
+SOFTWARE ENGINEERING PROJECT 3 BY:
+  EOGHAN HOGAN: 17335293
+  SAM MONTAGUE: 17307446
+
+Searching for moves:
+  -To search for moves decided the best method would be to divide up
+    the board into a series of one dimensional arrays. This would make it very easy to
+    search for moves as we only needed to search a one D array. it also meant that on
+    each turn it would always be a fixed number of searches. As it turns out
+    you only need to divide the board up into 38 different one dimensional arrays
+    and that provides all the playing areas. We had thought about searching the board
+    for a certain disk and then scan around that disk for a move but as the game goes
+    on that method is more computationally intensive, that method also required a lot more
+    complex code. Perhaps if we wanted to make a min-max for the game that way would be better.
+    However we came to the decision that dividing the board and searching each array
+    was the best way to search for moves.
+
+
+Get players move:
+  -Once we have searched for moves we simply show the player the moves in the for of
+  < move(number in array), row: x and col: y>
+  then the user simply enters a number between 1 - n (n being the amount of valid moves at that time)
+  to choose their move. this way gets rid of the need to do any input to (row, column) conversion.
+  We also decided this way has the lowest error rate as the user can just look at the board, look at the
+  move list and enter the number of their desired move.
+
+
+How work was divided up:
+
+  -Up until we had a final and complete version of the project we both had
+  independent versions of our own code on our systems. I (Eoghan) came up with the way we were
+  going to make the searching algorithm and then we both came up with our own versions
+  and picked the best bits from both to implement. Sam ended up writing the final version
+  of the searching methods using both our code. While he was doing that I quickly made the user
+  input methods. I also came up with the pseudo-code for flipping disks which I then gave to sam to write
+  the code as he had the final version of the searching algorithm on his system. Once that was
+  complete I added everything together in the main and got the program mostly working completely.
+
+  -We then created a repository and uploaded the entire mostly working project. We then just went
+  through the code looking for things we could clean up and fixing bugs. Once we were sure that
+  the game ran exactly as intended we added comments. 
